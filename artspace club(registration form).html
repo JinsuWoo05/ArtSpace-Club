@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Club Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="date"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .gender-options,
+        .status-options,
+        .skills-options {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body style="background-image: URL(https://uploads.onecompiler.io/43s57stjd/43t6ucg5w/Untitled.jpeg); background-size: cover; background-repeat: no-reapet;">
+    <div class="container">
+        <h2 style><font color="orange">ARTSPACE CLUB</font><font color="blue"> REGISTRATION FORM</font></h2>
+        <form>
+            <div class="form-group">
+                <label for="lastName">LASTNAME:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="firstName">FIRST NAME:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="mi">M.I.:</label>
+                <input type="text" id="mi" name="mi" maxlength="1" style="width: 30px;">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate (mm/dd/yyyy):</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="birthplace">Birthplace:</label>
+                <input type="text" id="birthplace" name="birthplace">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">M</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">F</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Status:</label>
+                <div class="status-options">
+                    <input type="radio" id="single" name="status" value="single">
+                    <label for="single">S</label>
+                    <input type="radio" id="married" name="status" value="married">
+                    <label for="married">M</label>
+                    <input type="radio" id="other" name="status" value="other">
+                    <label for="other">O</label>
+                    <input type="radio" id="widowed" name="status" value="widowed">
+                    <label for="widowed">W</label>
+                    <input type="radio" id="divorced" name="status" value="divorced">
+                    <label for="divorced">D</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Skills:</label>
+                <div class="skills-options">
+                    <input type="checkbox" id="Proportion" name="skills" value="proportion">
+                    <label for="proprotion">Proportion</label>
+                    <input type="checkbox" id="Photo&video editing" name="skills" value="Photo&video editing">
+                    <label for="Photo&video editing">Photo&video editing</label>
+                    <input type="checkbox" id="Perspecttive" name="skills" value="Perspecttive">
+                    <label for="Perspective">Perspecttive</label>
+                    <input type="checkbox" id="Shading" name="skills" value="Shading">
+                    <label for="Shading">Shading</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="schoolName">School Name:</label>
+                <input type="text" id="schoolName" name="schoolName">
+            </div>
+            <div class="form-group">
+                <label for="yearGraduated">Year Graduated:</label>
+                <input type="text" id="yearGraduated" name="yearGraduated">
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
